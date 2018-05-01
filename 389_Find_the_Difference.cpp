@@ -1,3 +1,15 @@
+/**************/
+
+Input:
+s = "abcd"
+t = "abcde"
+
+Output:
+e
+************* */
+    
+
+
 class Solution {
 public:
     char findTheDifference(string s, string t) {
