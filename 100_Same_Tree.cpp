@@ -21,7 +21,7 @@ public:
         if (p==NULL and q==NULL)
             return true;
         
-        if ((!p and q) or (p and !q))
+        if ((!p and q) or (p and !q)) //at least one node is NULL
             return false; 
         
         return (p->val==q->val) && (isSameTree(p->left, q->left)) && (isSameTree(p->right,q->right));
