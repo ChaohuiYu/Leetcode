@@ -3,5 +3,4 @@
    So here I use:  `vector<int> product_begin(n) vector<int> product_end(n);` 
    Now, the complexity: O(n) time and O(n) space 
 
-
-2.Optimization 
+2.	Optimization:
