@@ -27,3 +27,10 @@ Please refer to: [66](./66_Plus_One/),[724](./724_Find_Pivot_Index/),[747](./747
 Please refer to: [67](./67_Add_Binary)
 <br> You should be aware of the time complexity of these built-in operations.For instance, if the length of the string is N, the time complexity of both finding operation and substring operation is O(N).
 
+## Tree
+
+### Trverse A Tree
+
+It is worth noting that when you delete nodes in a tree, deletion process will be in post-order. That is to say, when you delete a node, you will delete its left child and its right child before you delete the node itself.
+
+<br> Implement both recursion and iteration solutions and compare the differences between them. 
