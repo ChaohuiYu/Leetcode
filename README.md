@@ -36,13 +36,12 @@ It is worth noting that when you delete nodes in a tree, deletion process will b
 <br> Implement both recursion and iteration solutions and compare the differences between them.
 
 **Recursive algorithms can be very space ineffiecent. Each recursive call adds a new layer to the stack, which means that if my algorithm recurses to a depth of n, it uses at least O(n) memory**
-**ALL recursive algorithms can be implemented iteratively!!**
-
-<br> [Morris Traversal 中文解析](http://www.cnblogs.com/AnnieKim/archive/2013/06/15/MorrisTraversal.html)
+**ALL recursive algorithms can be implemented iteratively!!**   
+[Morris Traversal 中文解析](http://www.cnblogs.com/AnnieKim/archive/2013/06/15/MorrisTraversal.html)
 
 ####  Level-order Traversal - Introduction
-Please refer to: [102](./102_Binary_Tree_Level_Order_Traversal)
-<br>Typically, we use a queue to help us to do BFS. 
+Please refer to: [102](./102_Binary_Tree_Level_Order_Traversal) 
+Typically, we use a queue to help us to do BFS. 
 
 ### Solve Tree Problems Recursively
 
