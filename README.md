@@ -32,7 +32,7 @@ Please refer to: [67](./67_Add_Binary)
 It is worth noting that when you delete nodes in a tree, deletion process will be in post-order. That is to say, when you delete a node, you will delete its left child and its right child before you delete the node itself.
 
 <br> Implement both recursion and iteration solutions and compare the differences between them.
-**Recursive algorithms can be very space ineffiecent. Each recursive call adds a new layer to the stack, which means that if my algorithm recurses to a depth of n, it uses at least O(n) memory**
+**Recursive algorithms can be very space ineffiecent. Each recursive call adds a new layer to the stack, which means that if my algorithm recurses to a depth of n, it uses at least O(n) memory.**
 **ALL recursive algorithms can be implemented iteratively!!**   
 <br>[Morris Traversal 中文解析](http://www.cnblogs.com/AnnieKim/archive/2013/06/15/MorrisTraversal.html)
 
