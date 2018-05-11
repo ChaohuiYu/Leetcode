@@ -53,3 +53,8 @@ Please refer to:[104](./104_Maximum_Depth_of_Binary_Tree)
         4. maximum_depth(root.left, depth + 1)      // call the function recursively for left child
         5. maximum_depth(root.right, depth + 1)     // call the function recursively for right child
 
+#### Bottom-up Solution
+<br>"Bottom-up" is another recursion solution. In each recursion level, we will firstly call the functions recursively for all the children nodes and then come up with the answer according to the return values and the value of the root node itself. This process can be regarded as kind of *postorder* traversal. 
+
+
+
