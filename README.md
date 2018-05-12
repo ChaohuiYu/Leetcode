@@ -57,4 +57,38 @@ Please refer to:[104](./104_Maximum_Depth_of_Binary_Tree)
 <br>"Bottom-up" is another recursion solution. In each recursion level, we will firstly call the functions recursively for all the children nodes and then come up with the answer according to the return values and the value of the root node itself. This process can be regarded as kind of *postorder* traversal. 
 
 
+## Binary Search
+
+Terminology used in Binary Search:
+
+    Target - the value that you are searching for
+    Index - the current location that you are searching
+    Left, Right - the indicies from which we use to maintain our search Space
+    Mid - the index that we use to apply a condition to determine if we should search left or Right
+
+<br>3 Parts of a Successful Binary Search
+
+    Binary Search is generally composed of 3 main sections:
+    Pre-processing - Sort if collection is unsorted.
+    Binary Search - Using a loop or recursion to divide search space in half after each comparison.
+    Post-processing - Determine viable candidates in the remaining space.
+
+###Binary Search Template I
+Template #1 is used to search for an element or condition which can be determined by accessing a single index in the array.
+    int binarySearch(vector<int>& nums, int target){
+      if(nums.size() == 0)
+        return -1;
+
+      int left = 0, right = nums.size() - 1;
+      while(left <= right){
+        // Prevent (left + right) overflow
+        int mid = left + (right - left) / 2;
+        if(nums[mid] == target){ return mid; }
+        else if(nums[mid] < target) { left = mid + 1; }
+        else { right = mid - 1; }
+      }
+
+      // End Condition: left > right
+      return -1;
+    }
 
