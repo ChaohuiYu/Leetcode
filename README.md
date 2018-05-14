@@ -66,15 +66,15 @@ Terminology used in Binary Search:
     Left, Right - the indicies from which we use to maintain our search Space
     Mid - the index that we use to apply a condition to determine if we should search left or Right
 
-<br>3 Parts of a Successful Binary Search
+- 3 Parts of a Successful Binary Search
 
     Binary Search is generally composed of 3 main sections:
     Pre-processing - Sort if collection is unsorted.
     Binary Search - Using a loop or recursion to divide search space in half after each comparison.
     Post-processing - Determine viable candidates in the remaining space.
 
-###Binary Search Template I
-Template #1 is used to search for an element or condition which can be determined by accessing a single index in the array.
+### Binary Search Template I
+- Template #1 is used to search for an element or condition which can be determined by accessing a single index in the array.
     int binarySearch(vector<int>& nums, int target){
       if(nums.size() == 0)
         return -1;
