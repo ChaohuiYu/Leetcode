@@ -143,3 +143,5 @@ Terminology used in Binary Search:
         if(nums[right] == target) return right;
         return -1;
         }
+
+###  Binary Search Template Analysis
