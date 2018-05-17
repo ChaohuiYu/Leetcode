@@ -145,3 +145,5 @@ Terminology used in Binary Search:
         }
 
 ###  Binary Search Template Analysis
+- Time and Space Complexity: Runtime: O(log n) -- Logorithmic Time
+- Space: O(1) -- Constant Space
