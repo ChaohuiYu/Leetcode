@@ -7,6 +7,10 @@
  * };
  */
 
+
+//20180527 mock interview
+
+
 // Video reference: https://www.youtube.com/watch?v=kW7aIXyPbXI
 // The concept is easy, but U need to be aware that the head might be removed,
 // so I add a "dummy node" in front of the head
