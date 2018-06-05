@@ -1,0 +1,1 @@
+1. [LeetCode Link](https://leetcode.com/problems/island-perimeter/discuss/136361/Simple-and-Clean-C++-176msO(M*N))
