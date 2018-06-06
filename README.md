@@ -152,3 +152,6 @@ Terminology used in Binary Search:
 - Hash Table is a data structure which organizes data using hash functions in order to support quick insertion and search.
 - The Principle of Hash Table: The key idea of Hash Table is to use a hash function to map keys to buckets.
 
+* To record the states using stack or map: [739](./739_Daily_Temperatures)
+* 
+
