@@ -13,9 +13,11 @@ public:
             res += num[i];
         }
         
+        // Still have digits to remove
         while (k > 0)
             res.pop_back(),k--;
         
+        // Prevent heading zero 
         while (!res.empty() and res[0] == '0')
             res.erase(0,1);
         
