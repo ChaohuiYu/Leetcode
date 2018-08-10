@@ -10,8 +10,40 @@
  */
 
 
-
-
+class Solution {
+    int cnt = 0;
+    int max_cnt = 0;
+public:
+    vector<int> findMode(TreeNode* root) {
+        if (!root) return {};
+        vector<int> res;
+        int curval = INT_MIN;
+        inOrder(root, res, curval);
+        return res;
+    }
+    void inOrder(TreeNode*n, vector<int>& res, int& curval)
+    {
+        if (!n) return;
+        
+        inOrder(n->left, res, curval);
+        
+        if (curval==n->val)
+            cnt++;
+        else{
+            cnt = 1;
+            curval = n->val;
+        }
+        if (cnt > max_cnt){
+            max_cnt = cnt;
+            res.clear();
+            res.push_back(n->val);
+        }
+        else if (cnt == max_cnt)
+            res.push_back(n->val);
+ 
+        inOrder(n->right, res, curval);
+    }
+};
 
 
 // Trivial
