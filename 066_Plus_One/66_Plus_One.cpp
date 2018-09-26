@@ -1,3 +1,25 @@
+
+class Solution {
+public:
+    vector<int> plusOne(vector<int>& digits) {
+        int carry = 1, i = digits.size() - 1;
+        
+        while (i>=0){
+            digits[i] += carry;
+            carry = digits[i] / 10;
+            digits[i] %= 10;
+            i--;
+        }
+        
+        if (carry){
+            digits.insert(digits.begin(), 1);
+        }
+        
+        return digits;
+    }
+};
+
+
 class Solution {
 public:
     vector<int> plusOne(vector<int>& digits) {
